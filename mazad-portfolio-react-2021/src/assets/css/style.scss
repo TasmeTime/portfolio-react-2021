@@ -1,0 +1,463 @@
+:root {
+  --cc_prime: #4280ff;
+  --cc_prime_20: #4281ff2f;
+}
+* {
+  font-family: "Brixton";
+  transition: all 0.5s;
+}
+
+#root {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 5%;
+}
+
+div.topSectionInfo.col-6.row > div.portrait {
+  display: flex;
+  align-items: center;
+}
+
+.img-thumbnail {
+  border-radius: 50%;
+  border: solid 4px #ced4da;
+  padding: 0;
+}
+
+div.topSectionInfo.col-6.row > div.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.topSectionInfo {
+  margin-top: 2rem;
+  .info {
+    h2 {
+      color: var(--cc_prime);
+      font-family: "Bebas";
+      font-size: 4rem;
+    }
+  }
+}
+
+div.topSectionInfo.col-6.row > div.info > p {
+  font-family: "Brixton";
+}
+
+.socialsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+}
+
+.socialBadge {
+  padding: 1px;
+  text-align: center;
+  background-color: #dee2e6;
+  border-radius: 20px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.socialBadge:hover {
+  background-color: var(--cc_prime);
+  border: 1px solid white;
+  i {
+    color: white;
+  }
+}
+
+.socialBadge > i {
+  color: black;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.topSectionNavMenu {
+  text-align: center;
+  .navItem {
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 0;
+    font-size: 1.5rem;
+    font-family: "Brixton";
+    border-color: var(--cc_prime);
+    padding: 0.5rem 1rem;
+    transition: border-bottom 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .navItem:hover {
+    border-bottom: 4px solid var(--cc_prime);
+  }
+}
+
+.custom-card {
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+
+  .custom-card-body {
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+  }
+  .custom-card-image {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    border-bottom: 1px solid #ced4da;
+  }
+  .custom-card-image.h100 {
+    height: 100px;
+  }
+  .custom-card-image.h200 {
+    height: 200px;
+  }
+  .custom-card-image.h300 {
+    height: 300px;
+  }
+  .custom-card-image.h400 {
+    height: 400px;
+  }
+}
+
+.custom-card-title {
+  font-family: "Bebas";
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.custom-card-title-br {
+  font-family: "Brixton";
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  color: black;
+}
+
+.custom-card.project-card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: none;
+  text-decoration: none;
+}
+
+.custom-card.project-card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  cursor: pointer;
+}
+
+.badges-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  :last-child {
+    margin-right: 0;
+  }
+}
+
+.skill-badge {
+  background-color: var(--cc_prime);
+  padding: 5px 15px 5px 15px;
+  border-radius: 15px;
+  color: white;
+  font-family: "Bebas";
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.ww-badge {
+  background-color: #212121;
+  padding: 5px 15px 5px 15px;
+  border-radius: 15px;
+  color: white;
+  font-family: "Bebas";
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.project-tag {
+  //background-color: #dee2e6;
+  background-color: var(--cc_prime_20);
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #212121;
+  font-family: "Brixton";
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.project-title {
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    i {
+      color: var(--cc_prime);
+    }
+  }
+}
+
+.slider-container {
+  height: 300px;
+}
+
+.image-silder {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.slider-dot-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  i {
+    margin-right: 5px;
+  }
+  i.slider-dot:hover {
+    background-color: var(--cc_prime_20);
+  }
+}
+.slider-dot {
+  width: 15px;
+  height: 15px;
+  background-color: #212121;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+.slider-dot-active {
+  width: 45px;
+  height: 15px;
+  background-color: var(--cc_prime);
+  border-radius: 10px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.btn {
+  border-radius: 10px !important;
+}
+
+.btn-primary {
+  background-color: var(--cc_prime) !important;
+}
+
+@media only screen and (min-width: 990px) {
+  .topSectionInfo {
+    .info {
+      h2 {
+        color: var(--cc_prime);
+        font-family: "Bebas";
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  .socialsContainer {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-self: center;
+  }
+  .topSectionSocial {
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .socialsContainer {
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+  }
+  .socialBadge {
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    i {
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .socialsContainer {
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+  }
+  .socialBadge {
+    border-radius: 15px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    margin-left: 0;
+    i {
+      font-size: 18px;
+    }
+  }
+
+  .topSectionNavMenu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 590px) {
+  .socialBadge {
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .topSectionNavMenu {
+    .navItem {
+      font-size: 1.35rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .topSectionInfo {
+    .info {
+      h2 {
+        color: var(--cc_prime);
+        font-family: "Bebas";
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .topSectionInfo {
+    .info {
+      h2 {
+        color: var(--cc_prime);
+        font-family: "Bebas";
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .custom-card-image {
+    height: 200px !important;
+  }
+}
+
+//loading
+
+#loadingContainer {
+  position: absolute;
+  width: 101%;
+  left: -4px;
+  height: 100%;
+  min-height: 300px;
+  background-color: white;
+  text-align: center;
+  transition: all 1;
+  $transition-duration: 1.5s;
+  $path-length: 157px; // Retrieved using SVG's getTotalLength()
+
+  svg {
+    overflow: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 50px;
+    height: auto;
+    position: relative;
+
+    g {
+      animation: slide $transition-duration linear infinite;
+
+      &:nth-child(2) {
+        animation-delay: $transition-duration / 4;
+
+        path {
+          animation-delay: $transition-duration / 4;
+          stroke-dasharray: 0px $path-length + 1;
+          stroke-dashoffset: 1px;
+        }
+      }
+    }
+
+    path {
+      stroke: url(#gradient);
+      stroke-width: 10px;
+      stroke-linecap: round;
+      fill: none;
+      stroke-dasharray: 0 $path-length;
+      stroke-dashoffset: 0;
+      animation: escalade $transition-duration cubic-bezier(0.8, 0, 0.2, 1)
+        infinite;
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(50px);
+    }
+  }
+
+  @keyframes escalade {
+    0% {
+      stroke-dasharray: 0 $path-length;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: $path-length - 1 $path-length;
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dasharray: $path-length - 1 $path-length;
+      stroke-dashoffset: -($path-length - 1);
+    }
+  }
+}
+
+//Content ShowError
+
+.contentError {
+  position: relative;
+}
+.loadingErrorContainer {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  h5 {
+    color: var(--cc_prime);
+  }
+}
